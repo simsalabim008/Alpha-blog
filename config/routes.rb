@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'share', to: 'share#share'
   root 'pages#home'
+
+  resources :articles
 end
