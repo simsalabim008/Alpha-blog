@@ -4,6 +4,84 @@
 
 .nav-link, .navbar-brand {
   color: #ffffff;
+  display: inline-block;
+  float: left;
+}
+
+.navbar-nav {
+  display: inline-block;
+  float: right;
+}
+
+#logo {
+  font-size: 1.7em;
+  color: #fff;
+  test-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-right: 5em;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.nav-item {
+  margin-left: 2em;
+}
+
+.container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.jumbotron {
+  background-image: asset-url('image-1');
+  background-size: cover;
+  height: 406px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3em;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+}
+
+.footer {
+  margin-top: 20em;
+  padding-top: 0.7em;
+  border-top: 0.2em solid #4286f4;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 3em;
+  font-size: small;
 }
 
 @import "bootstrap";
