@@ -76,4 +76,14 @@
   font-size: small;
 }
 
+#search {
+  color: #fff;
+  border-color: #116af9;
+  background-color: #116af9;
+}
+
+#search:hover {
+  background-color: #5e95ed;
+}
+
 @import "bootstrap";
