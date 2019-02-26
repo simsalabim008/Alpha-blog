@@ -53,6 +53,39 @@
   font-size: 1.7em;
 }
 
+#search {
+  color: #fff;
+  border-color: #116af9;
+  background-color: #116af9;
+  float: left;
+}
+
+#search:hover {
+  background-color: #5e95ed;
+}
+
+.btn-lg {
+  margin-right: 0.9em;
+}
+
+.card {
+  width: 97.5%;
+  margin-left: 0.9em;
+}
+
+#headh1 {
+  text-align: center;
+}
+
+.article-actions {
+  border-top: 1px solid #4286f4;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
 .footer {
   margin-top: 14em;
   padding-top: 0.7em;
@@ -75,32 +108,4 @@
 
 .footer ul li {
   font-size: small;
-}
-
-#search {
-  color: #fff;
-  border-color: #116af9;
-  background-color: #116af9;
-  float: left;
-}
-
-#search:hover {
-  background-color: #5e95ed;
-}
-
-.h1 {
-  text-align: center;
-}
-
-.btn-lg {
-  margin-right: 0.9em;
-}
-
-.card {
-  width: 97.5%;
-  margin-left: 0.9em;
-}
-
-#headh1 {
-  text-align: center;
 }
