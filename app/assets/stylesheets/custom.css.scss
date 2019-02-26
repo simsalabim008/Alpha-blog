@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 .navbar {
   background-color: #4286f4;
 }
@@ -39,7 +41,7 @@
 }
 
 .jumbotron h1 {
-  color: #fff;
+  color: #ffffff;
   font-size: 4em;
   text-shadow: -1px 0 #4286f4, 0 1px #4286f4, 1px 0 #4286f4, 0 -1px #4286f4;
   margin-top: 6em;
@@ -52,7 +54,7 @@
 }
 
 .footer {
-  margin-top: 20em;
+  margin-top: 14em;
   padding-top: 0.7em;
   border-top: 0.2em solid #4286f4;
   color: #777;
@@ -79,10 +81,26 @@
   color: #fff;
   border-color: #116af9;
   background-color: #116af9;
+  float: left;
 }
 
 #search:hover {
   background-color: #5e95ed;
 }
 
-@import "bootstrap";
+.h1 {
+  text-align: center;
+}
+
+.btn-lg {
+  margin-right: 0.9em;
+}
+
+.card {
+  width: 97.5%;
+  margin-left: 0.9em;
+}
+
+#headh1 {
+  text-align: center;
+}
