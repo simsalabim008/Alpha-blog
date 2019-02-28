@@ -1,6 +1,11 @@
 {
   "name": "alpha-blog",
   "private": true,
+  "scripts": {
+    "dev": "npm install bootstrap",
+    "dev": "npm run development",
+    "prod": "npm run production"
+  },
   "engines": {
     "node": "8.15.0",
     "npm": "6.4.1"
