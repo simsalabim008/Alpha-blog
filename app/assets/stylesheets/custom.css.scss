@@ -53,28 +53,38 @@
   font-size: 1.7em;
 }
 
+.butN {
+  display: inline-block;
+}
+
 #search {
   color: #fff;
   border-color: #116af9;
   background-color: #116af9;
-  float: left;
 }
 
 #search:hover {
   background-color: #5e95ed;
 }
 
-.btn-lg {
-  margin-right: 0.9em;
-}
-
 .card {
   width: 97.5%;
   margin-left: 0.9em;
+  border-style: none;
+}
+
+.control-label {
+  text-align: center;
+  color: #307cf4;
 }
 
 #headh1 {
   text-align: center;
+  color: #307cf4;
+}
+
+#textCol {
+  color: #70a1ef;
 }
 
 .article-actions {
@@ -84,6 +94,26 @@
 
 .description {
   margin-top: 0;
+  color: #307cf4;
+}
+
+.article-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  color: #307cf4;
+}
+
+.article-body {
+  border-top: 1px solid #4286f4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.article-actions {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .footer {
