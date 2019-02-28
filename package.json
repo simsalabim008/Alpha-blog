@@ -1,8 +1,12 @@
 {
   "name": "alpha-blog",
   "private": true,
+  "engines": {
+    "node": "8.15.0",
+    "npm": "6.4.1"
+  },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap-sass": "^3.4.1",
     "jquery": "^3.3.1"
   }
 }
