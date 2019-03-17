@@ -1,18 +1,8 @@
 {
   "name": "alpha-blog",
   "private": true,
-  "scripts": {
-    "dev": "npm install bootstrap",
-    "dev": "npm run development",
-    "prod": "npm run production"
-  },
-  "engines": {
-    "node": "8.15.0",
-    "npm": "6.4.1"
-  },
   "dependencies": {
     "bootstrap-sass": "^3.4.1",
-    "jquery": "^3.3.1",
-    "bootstrap": "^4.3.1"
+    "jquery": "^3.3.1"
   }
 }
