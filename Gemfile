@@ -7,6 +7,7 @@ ruby '2.6.0'
 gem 'rails', '~> 5.2.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'bcrypt', '~> 3.1.7'
 # Use SCSS for stylesheets
 gem 'bootstrap', '~> 4.3.1'
 gem 'sprockets-rails', '~> 2.3.1'
