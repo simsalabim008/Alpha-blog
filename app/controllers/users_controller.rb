@@ -3,12 +3,17 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+
   def create
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Welcome to the Alpha blog #{@user.username}"
       redirect_to articles_path
     else
+      flash[:danger] = "Danger Danger"
       render 'new'
     end
   end

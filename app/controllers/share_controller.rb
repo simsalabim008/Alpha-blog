@@ -1,4 +1,4 @@
 class ShareController < ApplicationController
-def share
-end
+  def show
+  end
 end

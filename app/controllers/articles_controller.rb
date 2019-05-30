@@ -10,32 +10,31 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    # @article.user = User.first
   end
 
   def create
     @article = Article.new(article_params)
-    # @article.user = User.first
+
+    @article.user = User.first
     if @article.save
       flash[:success] = "Article was succesfully created"
-      redirect_to article_path(@article)
+      redirect_to @article
     else
+      flash[:danger] = "Danger Danger"
       render 'new'
     end
   end
 
   def update
-    @article.user = User.first
     if @article.update(article_params)
       flash[:success] = "Article was succesfully updated"
       redirect_to article_path(@article)
     else
-      render 'new'
+      render 'edit'
     end
   end
 
   def show
-
   end
 
   def destroy
