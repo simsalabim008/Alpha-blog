@@ -13,12 +13,17 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Actions
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
-          <%= link_to "Article list", articles_path, class: "dropdown-item" %>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        <% if logged_in? %>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
+            <%= link_to "Article list", articles_path, class: "dropdown-item" %>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Users", users_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "About", about_path, class: "nav-link" %>
@@ -31,11 +36,22 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
     </form>
-    <li class="nav-item listing">
-      <%= link_to "Log in", login_path, class: "nav-link" %>
+    <% if logged_in? %>
+    <li class="dropdown listing">
+      <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Profile<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li class="listing"><%= link_to "Edit your profile", edit_user_path(current_user) %><li>
+          <li class="listing"><%= link_to "View your profile", user_path(current_user) %><li>
+      </ul>
     </li>
     <li class="nav-item listing">
       <%= link_to "Log out", logout_path, class: "nav-link", method: :delete %>
     </li>
+    <% else %>
+    <li class="nav-item listing">
+      <%= link_to "Signup", signup_path, class: "nav-link" %>
+      <%= link_to "Log in", login_path, class: "nav-link" %>
+    </li>
+    <% end %>
   </div>
 </nav>
