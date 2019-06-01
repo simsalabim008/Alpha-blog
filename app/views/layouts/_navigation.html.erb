@@ -38,7 +38,7 @@
     </form>
     <% if logged_in? %>
     <li class="dropdown listing">
-      <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Profile<span class="caret"></span></a>
+      <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your <%= "Admin" if current_user.admin? %> Profile<span class="caret"></span></a>
       <ul class="dropdown-menu">
         <li class="listing"><%= link_to "Edit your profile", edit_user_path(current_user) %><li>
           <li class="listing"><%= link_to "View your profile", user_path(current_user) %><li>
