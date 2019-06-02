@@ -37,11 +37,11 @@
       <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="submit">Search</button>
     </form>
     <% if logged_in? %>
-    <li class="dropdown listing">
-      <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your <%= "Admin" if current_user.admin? %> Profile<span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li class="listing"><%= link_to "Edit your profile", edit_user_path(current_user) %><li>
-          <li class="listing"><%= link_to "View your profile", user_path(current_user) %><li>
+    <li class="nav-item dropdown listing">
+      <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your <%= "Admin" if current_user.admin? %> Profile<span class="caret"></span></a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li class="listing"><%= link_to "Edit your profile", edit_user_path(current_user), class: "dropdown-item" %><li>
+          <li class="listing"><%= link_to "View your profile", user_path(current_user), class: "dropdown-item" %><li>
       </ul>
     </li>
     <li class="nav-item listing">
