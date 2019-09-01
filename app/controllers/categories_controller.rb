@@ -1,4 +1,3 @@
-# blabl
 class CategoriesController < ApplicationController
   before_action :require_admin, except: [:index, :show]
 
